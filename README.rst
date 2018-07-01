@@ -3,13 +3,17 @@ Aligo REST Client for Python
 ============================
 
 
+.. image:: https://travis-ci.org/james-song/aligo-rest-client-python.svg?branch=master
+    :target: https://travis-ci.org/james-song/aligo-rest-client-python
+
+
 Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈입니다.
 
 * 공식 client가 아닌 관계로 이용 중 발생한 문제에 대해 책임지지 않습니다.
 
 
 설치
-===
+=======
 
 .. code-block:: shell
 
@@ -17,7 +21,8 @@ Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈
 
 
 기능
-===
+=======
+
  - SMS 발송
  - LMS 발송
  - MMS 발송
@@ -27,10 +32,10 @@ Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈
 
 
 사용법
-====
+=======
 
 초기화
------
+------
 .. code-block:: python
 
     from aligo.client import Aligo
@@ -38,11 +43,11 @@ Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈
     client = Aligo(
         auth_key={발급받은 API 키},
         user_id={사용자 계정},
-        is_test={테스트 모드 도작 여부 True|False}
+        is_test={테스트 모드 여부 True|False}
     )
 
 발송
----
+-----
 
 .. code-block:: python
 
@@ -56,7 +61,7 @@ Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈
 
 
 상세전송 결과 확인
--------------
+------------------
 
 .. code-block:: python
 
@@ -64,7 +69,7 @@ Python 사용자를 위한 `Aligo <https://smartsms.aligo.in/>`_ REST API 모듈
 
 
 발송가능 건수 확인
--------------
+------------------
 
 .. code-block:: python
 
